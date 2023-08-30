@@ -105,7 +105,7 @@ function deleteItem() {
 function showItem() {
 
     if (localStorage.length) {
-        results.innerHTML = `Found Items <span>${localStorage.length}</span> <br>`;
+        results.innerHTML = `Found Items <span>${localStorage.length}</span> <hr>`;
         for (let [key, value] of Object.entries(localStorage)) { // Object.entries(localStorage) => [["name", "mohamed"], ["age", "22"], ["hoopy", "porgramming"]]
             results.innerHTML += `Key = <span>${key}</span> : Value = <span>${value}</span><br>`
         }
